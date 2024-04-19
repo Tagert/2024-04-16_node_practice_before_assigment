@@ -8,7 +8,7 @@ const realEstateSchema = mongoose.Schema({
   floor: { type: String, required: true, min: 3 },
   location: { type: String, required: true, min: 3 },
   price: { type: Number, required: true },
-  // userId: { type: String, required: true },
+  userId: { type: String, required: true },
 });
 
 const realEstateModel = mongoose.model("real_estate", realEstateSchema);

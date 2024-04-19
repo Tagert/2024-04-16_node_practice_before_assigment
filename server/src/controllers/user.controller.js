@@ -18,7 +18,6 @@ const SIGN_UP = async (req, res) => {
     });
     user.id = user._id.toString();
 
-    // const user = new UserModel(userData);
     const response = await user.save();
 
     return res.status(201).json({

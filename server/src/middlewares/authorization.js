@@ -14,8 +14,6 @@ const authUser = (req, res, next) => {
         .json({ message: "User has not been authenticated" });
     }
 
-    console.log("test");
-
     req.body.userId = decoded.user_id;
 
     return next();
